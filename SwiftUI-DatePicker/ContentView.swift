@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var birthdate = Date()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        DatePicker("Birthdate", selection: $birthdate, in: ...Date(), displayedComponents: .date)
     }
 }
 
