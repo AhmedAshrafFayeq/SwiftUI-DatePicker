@@ -10,7 +10,9 @@ import SwiftUI
 struct ContentView: View {
     @State private var birthdate = Date()
     var body: some View {
-        DatePicker("Birthdate", selection: $birthdate, in: ...Date(), displayedComponents: .date)
+        Form{
+            DatePicker("Birthdate", selection: $birthdate).datePickerStyle(GraphicalDatePickerStyle())
+        }
     }
 }
 
