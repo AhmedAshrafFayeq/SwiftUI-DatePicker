@@ -11,7 +11,7 @@ struct ContentView: View {
     @State private var birthdate = Date()
     var body: some View {
         Form{
-            DatePicker("Birthdate", selection: $birthdate).datePickerStyle(GraphicalDatePickerStyle())
+            DatePicker("Birthdate", selection: $birthdate).datePickerStyle(WheelDatePickerStyle())
         }
     }
 }
